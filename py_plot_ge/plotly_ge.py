@@ -16,7 +16,7 @@ def plotly_gelayout(
 
     Args:
         plotly_object: A plotly object.
-        plot_title,xaxis_title,yaxis_title,yaxis2_title,legend_title Character vectors with the titles.
+        plot_title,xaxis_title,yaxis_title,yaxis2_title,legend_title: Character vectors with the titles.
         legend_h_adjust: Numeric value which can be positive and negative. Default is -0.1.
         hovermode: Character vector with default "x". Other possible values are "y", "closest", FALSE, "x unified" and "y unified".
         legend_title_space: Character vector with white space to align legend title.
@@ -36,6 +36,8 @@ def plotly_gelayout(
         yaxis=dict(
             title=yaxis_title,
             titlefont=dict(size=font_size),
+            showgrid=True,
+            gridcolor='grey',
             zeroline=False
         ),
         legend=dict(
@@ -54,6 +56,7 @@ def plotly_gelayout(
         hovermode=hovermode,
         clickmode="select",
         autosize=True,
+        plot_bgcolor='white',
         margin=dict(l=50, r=50, b=20, t=20, pad=4),
         modebar_remove=[
             "pan",
