@@ -57,7 +57,7 @@ def plotly_gelayout(
         clickmode="select",
         autosize=True,
         plot_bgcolor='white',
-        margin=dict(l=50, r=50, b=20, t=20, pad=4),
+        margin=dict(l=50, r=50, b=50, t=50, pad=4),
         modebar_remove=[
             "pan",
             "zoom",
